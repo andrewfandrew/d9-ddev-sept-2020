@@ -1,0 +1,8 @@
+
+andrewpage.andrewpage_controller_content:
+  path: '/andrew-page'
+  defaults:
+    _controller: '\Drupal\andrewpage\Controller\AndrewpageController::content'
+    _title: "Andrew's page"
+  requirements:
+    _permission: 'access content'

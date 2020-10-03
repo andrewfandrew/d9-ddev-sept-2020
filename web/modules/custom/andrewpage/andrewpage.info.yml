@@ -1,0 +1,6 @@
+name: 'Andrew page'
+type: module
+description: 'A page using twig template, a route and controller'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'

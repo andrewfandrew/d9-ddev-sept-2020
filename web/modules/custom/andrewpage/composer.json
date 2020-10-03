@@ -1,0 +1,13 @@
+{
+    "name": "andrewpage",
+    "type": "drupal-module",
+    "description": "A page using twig template, a route and controller",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/andrewpage",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/andrewpage",
+        "source": "http://cgit.drupalcode.org/andrewpage",
+    },
+}
