@@ -1,0 +1,59 @@
+<?php
+/**
+ * @file
+ * contains customajaxcommandcked.module file
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Render\Element\StatusMessages;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\customajaxcommandcked\Ajax\InsertInCkeditor; // My custom class
+
+/**
+ * Implementing hook_form_alter()
+ * @param array $form, $form_state, $form_id
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function customajaxcommandcked_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_job_listing_edit_form') {
+    // attaching custom js library to node edit form.
+    $form['#attached']['library'][] = 'customajaxcommandcked/customajaxcommandcked';
+    // adding a prefix wrapper of ajax callback
+    $form['title']['#prefix'] = '<div id="nodeJobListingForm">';
+    $form['title']['#suffix'] = '</div>';
+    // adding a prefix to body field for creating proper selector.
+    $form['body']['widget']['#prefix'] = '<div id="job_body">';
+    $form['body']['widget']['#suffix'] = '<div>'; // job requirements
+
+    // select list on which change I am going to fire js event
+    $jobs_list = ['India', 'US', 'UK', 'France'];
+    $form['title']['#options'] = array('_none' => '- Select -') + $jobs_list;
+    $form['title']['#ajax'] = array(
+      'callback' => 'updateFormValuesCallback',
+      'event' => 'change',
+      'wrapper' => 'nodeJobListingForm',
+      'progress' => array(
+        'type' => 'throbber',
+        'message' => NULL,
+      ),
+    );
+  }
+}
+
+/**
+ * Custom Ajax callback form change on node edit/submit form
+ *
+ */
+function updateFormValuesCallback(array $form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $response = new AjaxResponse();
+  $job_description = '<p>Hi This is a test message.</p>';
+  $response->addCommand(new InsertInCkeditor('#job_body textarea', 'val',
+  [$job_description]));
+  return $response;
+
+}

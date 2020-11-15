@@ -8,6 +8,6 @@
     "minimum-stability": "dev",
     "support": {
         "issues": "https://www.drupal.org/project/issues/welcome",
-        "source": "http://cgit.drupalcode.org/welcome",
-    },
+        "source": "http://cgit.drupalcode.org/welcome"
+    }
 }
