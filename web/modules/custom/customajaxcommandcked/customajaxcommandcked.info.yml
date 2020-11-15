@@ -1,6 +1,6 @@
 name: Custom Ajax Command Ckeditor
 type: module
-description: Custom module to handle Custom APIs and custom requirements
+description: Custom module to handle Custom APIs/ requirements. From online tutorial. Does not work.
 package: custom
 core: 8.x
 core_version_requirement: ^8 || ^9
