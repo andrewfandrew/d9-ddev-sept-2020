@@ -1,0 +1,14 @@
+
+# Statistic menu items definition
+entity.statistic.collection:
+  title: 'Statistic list'
+  route_name: entity.statistic.collection
+  description: 'List Statistic entities'
+  parent: system.admin_structure
+  weight: 100
+
+statistic.admin.structure.settings:
+  title: 'Statistic settings'
+  description: 'Configure Statistic entities'
+  route_name: statistic.settings
+  parent: system.admin_structure

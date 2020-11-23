@@ -1,0 +1,6 @@
+name: 'custom_validation'
+type: module
+description: 'Custom validation using the Entity validation API, better than using Form API.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'

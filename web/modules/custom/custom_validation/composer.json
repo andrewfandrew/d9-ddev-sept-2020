@@ -1,0 +1,13 @@
+{
+    "name": "custom_validation",
+    "type": "drupal-module",
+    "description": "Custom validation using the Entity validation API, e",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/custom_validation",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/custom_validation",
+        "source": "http://cgit.drupalcode.org/custom_validation",
+    },
+}

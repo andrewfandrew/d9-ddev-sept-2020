@@ -1,0 +1,9 @@
+customajaxcommandcked:
+  js:
+    js/customajaxcommandcked.js: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - ckeditor/drupal.ckeditor
