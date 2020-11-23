@@ -2,3 +2,7 @@
 .idea/
 vendor/
 web/sites/default/files
+web/core
+web/themes/contrib
+web/modules/contrib
+
