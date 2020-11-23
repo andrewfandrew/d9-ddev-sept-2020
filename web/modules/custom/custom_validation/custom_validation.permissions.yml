@@ -1,0 +1,31 @@
+add statistic entities:
+  title: 'Create new Statistic entities'
+
+administer statistic entities:
+  title: 'Administer Statistic entities'
+  description: 'Allow to access the administration form to configure Statistic entities.'
+  restrict access: true
+
+delete statistic entities:
+  title: 'Delete Statistic entities'
+
+edit statistic entities:
+  title: 'Edit Statistic entities'
+
+view published statistic entities:
+  title: 'View published Statistic entities'
+
+view unpublished statistic entities:
+  title: 'View unpublished Statistic entities'
+
+view all statistic revisions:
+  title: 'View all Statistic revisions'
+
+revert all statistic revisions:
+  title: 'Revert all Statistic revisions'
+  description: 'Role requires permission <em>view Statistic revisions</em> and <em>edit rights</em> for statistic entities in question or <em>administer statistic entities</em>.'
+
+delete all statistic revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Statistic revisions</em> and <em>delete rights</em> for statistic entities in question or <em>administer statistic entities</em>.'
+

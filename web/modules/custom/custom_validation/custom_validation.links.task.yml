@@ -1,0 +1,26 @@
+# Statistic routing definition
+statistic.settings_tab:
+  route_name: statistic.settings
+  title: 'Settings'
+  base_route: statistic.settings
+
+entity.statistic.canonical:
+  route_name: entity.statistic.canonical
+  base_route: entity.statistic.canonical
+  title: 'View'
+
+entity.statistic.edit_form:
+  route_name: entity.statistic.edit_form
+  base_route: entity.statistic.canonical
+  title: 'Edit'
+
+entity.statistic.version_history:
+  route_name: entity.statistic.version_history
+  base_route: entity.statistic.canonical
+  title: 'Revisions'
+
+entity.statistic.delete_form:
+  route_name:  entity.statistic.delete_form
+  base_route:  entity.statistic.canonical
+  title: Delete
+  weight: 10

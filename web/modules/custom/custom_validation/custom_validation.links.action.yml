@@ -1,0 +1,5 @@
+entity.statistic.add_form:
+  route_name: entity.statistic.add_form
+  title: 'Add Statistic'
+  appears_on:
+    - entity.statistic.collection

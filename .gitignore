@@ -1,3 +1,4 @@
 .editorconfig
 .idea/
 vendor/
+web/sites/default/files
